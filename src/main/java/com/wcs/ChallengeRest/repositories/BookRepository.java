@@ -21,5 +21,5 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     void deleteById(Long id);
 
     // custom query to search to blog post by title or content
-    List<Book> findByTitleContainingOrContentContaining(String text, String textAgain);
+    List<Book> findByTitleContainingOrDescriptionContaining(String text, String textAgain);
 }
